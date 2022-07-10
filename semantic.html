@@ -17,6 +17,22 @@
             font-style: italic;
             background-color: lightgray;
         }
+
+        nav>ul {
+            display: flex;
+        }
+
+        .helo {
+            display: none;
+            position: absolute;
+            background-color: rgb(126, 113, 110);
+            padding: 0;
+            margin-right: -20px;
+        }
+
+        nav>ul>li:hover>ul {
+            display: block;
+        }
     </style>
 </head>
 
@@ -25,8 +41,19 @@
         <nav>
             <ul>
                 <li><a href="#">Home</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">Explore</a></li>
+                <li><a href="#">Contact<ul class="helo">
+                            <li><a href="users.html">users</a></li>
+                            <li><a href="access">access</a></li>
+                            <li><a href="#">hi mahfuj</a></li>
+                            <li><a href="#">hi mahfuj</a></li>
+                        </ul>
+                    </a></li>
+                <li><a href="#">Explore<ul class="helo">
+                            <li><a href="#">hi mahfuj</a></li>
+                            <li><a href="#">hi mahfuj</a></li>
+                            <li><a href="#">hi mahfuj</a></li>
+                            <li><a href="#">hi mahfuj</a></li>
+                        </ul></a></li>
                 <li><a href="#">Subscribe</a></li>
             </ul>
         </nav>
